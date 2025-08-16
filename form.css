@@ -1,0 +1,112 @@
+/* Overall container */
+.ajent-box-outer1 {
+  width: 100%;
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Inner container for layout */
+.ajent-box-inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Left side map container */
+.inner_box1 {
+  flex: 1;
+  min-width: 480px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Right side form container */
+.inner_box2 {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+.contact-para1 {
+  margin-bottom: 25px;
+  color: #222;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+/* Input fields style */
+.contact-form,
+.contact-form-subject,
+.contact-message {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Textarea specific */
+.contact-message {
+  height: 120px;
+  resize: vertical;
+}
+
+/* Focus style */
+.contact-form:focus,
+.contact-form-subject:focus,
+.contact-message:focus {
+  border-color: #ffcc00;
+  outline: none;
+}
+
+/* Submit button style */
+.contact-submit {
+  background-color: #ffcc00;
+  color: #222;
+  font-weight: 700;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-submit:hover {
+  background-color: #e6b800;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .ajent-box-outer1,
+  .ajent-box-inner {
+    flex-direction: column;
+  }
+
+  .inner_box1,
+  .inner_box2 {
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+}

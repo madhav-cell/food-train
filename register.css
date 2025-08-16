@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #08b4ed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Navigation Bar */
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Background Blur Effect */
+.main-div-for-blur-img {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    backdrop-filter: blur(10px);
+}
+
+/* Registration Form */
+.wrapper {
+    width: 420px;
+    background: rgba(230, 235, 232, 0.929);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 12px;
+    padding: 30px 40px;
+    text-align: center;
+    transition: 0.4s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.wrapper:hover {
+    border: 2px solid #08b4ed;
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 15px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    outline: none;
+    border: 1px solid rgba(233, 9, 9, 0.938);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #5b4589;
+    padding: 20px;
+    transition: 0.4s;
+}
+
+.input-box input::placeholder {
+    color: rgba(76, 151, 180, 0.7);
+}
+
+.input-box input:focus {
+    border-color: #ad3c82;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    height: 45px;
+    background-color: #380ade;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    background: #f16507;
+}
+
+/* Error Message */
+.error {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Register Link */
+.register-link {
+    margin-top: 15px;
+    font-size: 16px;
+    color: rgba(29, 29, 29, 0.841);
+}
+
+.register-link a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0f1010cd;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 10px;
+    }
+}

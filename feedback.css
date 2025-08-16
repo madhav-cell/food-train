@@ -1,0 +1,50 @@
+/* General Reset and Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Body with Background Image */
+  body {
+    background-size: cover;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  /* Centered Form Styling */
+  form {
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+    padding: 25px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Inputs, Selects, Textareas, Button Styling */
+  input,
+  textarea,
+  select,
+  button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Submit Button Styling */
+  button {
+    background-color: #35424a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2a363f;
+  }
+  
